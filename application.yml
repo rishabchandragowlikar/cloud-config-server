@@ -10,8 +10,10 @@ eureka:
     
 microservices:
   order-service:
-    endpoint:
-      uri: http://localhost:9091/book/bookOrder
+    endpoints:
+      endpoint:
+        uri: http://localhost:9091/book/bookOrder
   payment-service:
     endpoints:
-      endpoint: http://localhost:9092/payment/doPayment 
+      endpoint:  
+        uri: http://PAYMENT-SVC/payment/doPayment
