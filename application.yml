@@ -6,3 +6,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka
   instance:
     hostname: localhost
+microservices:
+  order-service:
+    endpoint:
+      uri: http://localhost:9091/book/bookOrder
+  payment-service:
+    endpoints:
+      endpoint: http://localhost:9092/payment/doPayment 
